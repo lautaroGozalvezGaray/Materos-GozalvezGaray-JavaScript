@@ -1,20 +1,54 @@
+
+//input radio - se seleccionan los elementos a mostrar
 alert("funciona")
 
-var checkbox = document.querySelector(".mate");
+let radio0 = document.querySelector(".all");
+let radio1 = document.querySelector(".mate");
+let radio2 = document.querySelector(".termo");
+let radio3 = document.querySelector(".mochila");
+mate = document.getElementById("mates");
 termo = document.getElementById("termos");
 mochila = document.getElementById("mochilas");
 
-checkbox.addEventListener( 'change', function() {
+radio0.addEventListener( 'change', function() {
+    if(this.checked) {
+        mate.style.display='';
+        termo.style.display='';
+        mochila.style.display=''; 
+    }});
+
+radio1.addEventListener( 'change', function() {
 if(this.checked) {
+    mate.style.display='';
     termo.style.display='none';
-    mochila.style.display='none';
-    
-}else{
-    termo.style.display='';
-    mochilas.style.display='';
+    mochila.style.display='none'; 
 }});
 
-const cards = document.querySelectorAll(".cardd");
+radio2.addEventListener('change', function(){
+
+    if(this.checked){
+        termo.style.display='';
+        mate.style.display='none';
+        mochila.style.display='none'
+    }
+
+});
+
+radio3.addEventListener('change', function(){
+
+    if(this.checked){
+        termo.style.display='none';
+        mate.style.display='none';
+        mochila.style.display=''
+    }
+
+});
+
+
+
+
+
+/* const cards = document.querySelectorAll(".cardd");
 console.log(cards)
 document.addEventListener('keyup', (e) => {
     if(e.target.matches('.filter')){
@@ -28,4 +62,4 @@ document.addEventListener('keyup', (e) => {
         });
     }
 })
-
+ */

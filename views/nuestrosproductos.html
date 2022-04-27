@@ -76,22 +76,6 @@
 
     <!-- MAIN -->
     <main class="main">
-        <!-- <section class="carrito">
-            <div>
-                <h4>Productos buscados</h4>
-                <ul id="productoBuscados">
-                </ul>
-            </div>
-            <div>
-                <h4>Productos a comprar</h4>
-                <ul id="productoSeleccionados">
-                </ul>
-            </div>
-            <div id="contenedor">
-                <h4>el total de su compra es: </h4>
-                <p id="total"></p>
-            </div>
-        </section> -->
         <section class="titleAllProduct">
             <div>
                 <h1>TODOS NUESTROS PRODUCTOS</h1>
@@ -105,13 +89,14 @@
             <div class="row">
                 <div class="col-sm imput">
                     <p>categorias: </p>
-                    <label><input class="mate"type="checkbox" id="mate" value="mate" target="">Mates</label><br>
-
-                    <input type="checkbox" id="cbox2" value="termo">
-                    <label for="cbox2">Termos</label><br>
-
-                    <input type="checkbox" id="cbox3" value="mochila">
-                    <label for="cbox3">Mochilas</label>
+                    <input class="all" name="categoria" type="radio" id="radio0" value="all">
+                    <label for="radio0">Todos los productos</label><br>
+                    <input class="mate" name="categoria" type="radio" id="radio1" value="mates">
+                    <label for="radio1">Mates</label><br>
+                    <input class="termo" type="radio" name="categoria"  id="radio2" value="termos">
+                    <label for="radio2">Termos</label><br>
+                    <input class="mochila" type="radio" name="categoria"  id="radio3" value="mochilas">
+                    <label for="radio3">Mochilas</label>
                 </div>
                 <div class="col-sm">
                     <p>buscar producto</p>
@@ -135,7 +120,7 @@
         <!-- <section class="titleEachProduct" id="mates">
             <h2>MATES</h2>
         </section> -->
-        <section class="allProduct">
+        <section id="mates"class="allProduct">
             <div class="cardd" value="mate" terget="mate">
                 <img src="../img/MATES1/mate1.jpeg" alt="producto-mate"/>
                 <h4>Mate alpaca cincelada</h4>
