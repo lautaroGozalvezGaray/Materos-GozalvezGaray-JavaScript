@@ -222,65 +222,81 @@ header {
 /*-----------ESTILOS NUESTROS PRODUCTOS-----------*/
 /*DESKTOP*/
 @media (min-width: 1024px) {
-  .main .carrito {
-    text-align: center; }
-    .main .carrito h4 {
-      font-family: "Open Sans", sans-serif; }
-    .main .carrito li {
-      text-decoration: none;
-      list-style: none;
-      font-family: "Open Sans", sans-serif;
-      padding: 0.9rem; }
-  .main .titleAllProduct {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #eeeeee;
-    margin-top: 1.5rem;
-    height: 10rem; }
-    .main .titleAllProduct h1 {
-      font-family: "Open Sans", sans-serif;
-      font-size: 2.5rem; }
-    .main .titleAllProduct p {
-      font-family: "Open Sans", sans-serif;
-      font-style: italic;
-      margin-top: 0.5rem; }
-  .main .titleEachProduct h2 {
-    text-align: center;
-    font-family: "Open Sans", sans-serif;
-    margin-top: 2.5rem;
-    background-color: #eeeeee;
-    border-radius: 15px;
-    width: 80%; }
-  .main .allProduct {
+  .main {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: auto;
-    justify-items: center;
-    gap: 1.5rem;
-    margin-bottom: 1rem; }
-    .main .allProduct h4 {
+    /* .carrito{
+            text-align: center;
+            h4{
+                font-family: $fontAllPage;
+            }
+            li{
+                text-decoration: none;
+                list-style: none;
+                font-family: $fontAllPage;
+                padding: 0.9rem;
+            }
+              
+        } */ }
+    .main .titleAllProduct {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: #eeeeee;
+      margin-top: 1.5rem;
+      height: 10rem; }
+      .main .titleAllProduct h1 {
+        font-family: "Open Sans", sans-serif;
+        font-size: 2.5rem; }
+      .main .titleAllProduct p {
+        font-family: "Open Sans", sans-serif;
+        font-style: italic;
+        margin-top: 0.5rem; }
+    .main .buscador {
+      margin-top: 2rem; }
+      .main .buscador h2 {
+        background-color: #eeeeee;
+        text-align: center; }
+      .main .buscador div {
+        align-self: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #eeeeee; }
+    .main .titleEachProduct h2 {
       text-align: center;
-      font-size: 1rem;
       font-family: "Open Sans", sans-serif;
-      margin-top: 1rem; }
-    .main .allProduct h6 {
-      text-align: center;
-      font-family: "Open Sans", sans-serif; }
-    .main .allProduct div {
-      text-align: center; }
-      .main .allProduct div a {
-        width: 8.3rem;
-        font-size: 0.8rem; }
-    .main .allProduct img {
-      margin-top: 2rem;
-      box-shadow: 3px 1px 23px 0px rgba(0, 0, 0, 0.85);
-      -webkit-box-shadow: 3px 1px 23px 0px rgba(0, 0, 0, 0.85);
-      -moz-box-shadow: 3px 1px 23px 0px rgba(0, 0, 0, 0.85); }
-      .main .allProduct img:hover {
-        transform: scale(1.1, 1.1);
-        border: 2px solid white; } }
+      margin-top: 2.5rem;
+      background-color: #eeeeee;
+      border-radius: 15px;
+      width: 80%; }
+    .main .allProduct {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: auto;
+      justify-items: center;
+      gap: 1.5rem;
+      margin-bottom: 1rem; }
+      .main .allProduct h4 {
+        text-align: center;
+        font-size: 1rem;
+        font-family: "Open Sans", sans-serif;
+        margin-top: 1rem; }
+      .main .allProduct h6 {
+        text-align: center;
+        font-family: "Open Sans", sans-serif; }
+      .main .allProduct div {
+        text-align: center; }
+        .main .allProduct div a {
+          width: 8.3rem;
+          font-size: 0.8rem; }
+      .main .allProduct img {
+        margin-top: 2rem;
+        box-shadow: 3px 1px 23px 0px rgba(0, 0, 0, 0.85);
+        -webkit-box-shadow: 3px 1px 23px 0px rgba(0, 0, 0, 0.85);
+        -moz-box-shadow: 3px 1px 23px 0px rgba(0, 0, 0, 0.85); }
+        .main .allProduct img:hover {
+          transform: scale(1.1, 1.1);
+          border: 2px solid white; } }
 
 /*TABLET*/
 @media (min-width: 500px) and (max-width: 1023px) {
