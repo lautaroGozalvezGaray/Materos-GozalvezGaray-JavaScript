@@ -107,6 +107,9 @@ radio3.addEventListener('change', function(){
 
 });
 
+
+//BOTONES PARA AGREGAR AL CARRITO DE COMPRA
+
 const buySelect=[];//almacenamos los productos que el cliente quiere comprar.
 
 
