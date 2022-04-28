@@ -87,8 +87,11 @@
         <div class="buscador container">
             <h2>BUSCADOR DE PRODUCTOS</h2>
             <div class="row">
+                <div>
+                    <input class="filter" type="text" placeholder="Ingrese una palabra">
+                </div>
+                <p>categorias: </p>
                 <div class="col-sm imput">
-                    <p>categorias: </p>
                     <input class="all" name="categoria" type="radio" id="radio0" value="all">
                     <label for="radio0">Todos los productos</label><br>
                     <input class="mate" name="categoria" type="radio" id="radio1" value="mates">
@@ -98,54 +101,41 @@
                     <input class="mochila" type="radio" name="categoria"  id="radio3" value="mochilas">
                     <label for="radio3">Mochilas</label>
                 </div>
-                <div class="col-sm">
-                    <p>buscar producto</p>
-                    <div class="input-group mb-3">
-                        <input type="text" id="filter"class="filter" value="" aria-label="Username" aria-describedby="basic-addon1">
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <select class="option">
-                        <option value="value1">Value 1</option>
-                        <option value="value2" selected>Value 2</option>
-                        <option value="value3">Value 3</option>
-                    </select>
-                    
-                    
-                </div>
-                
             </div>
         </div>
         
         <!-- <section class="titleEachProduct" id="mates">
             <h2>MATES</h2>
         </section> -->
+            
         <section id="mates"class="allProduct">
-            <div class="cardd" value="mate" terget="mate">
+            <div class="mate cardd" value="mate" terget="mate">
                 <img src="../img/MATES1/mate1.jpeg" alt="producto-mate"/>
                 <h4>Mate alpaca cincelada</h4>
                 <h6>$3800</h6>
-                <a href="#" class="btn btn-success">Agregar al carrito</a>
+                <button id="btn1">agregar al carrito</button>
+                <!-- <a  class="btn btn-success" id="btn1">Agregar al carrito</a> -->
             </div>
-            <div class="cardd">
+            <div class="cardd mate">
                 <img src="../img/MATES1/mate2.jpeg" alt="producto-mate"/>
                 <h4>Mate imperial criollo</h4>
                 <h6>$4100</h6>
-                <a href="#" class="btn btn-success">Agregar al carrito</a>
+                <button id="btn2">agregar al carrito</button>
+                <!-- <a href="#" class="btn btn-success">Agregar al carrito</a> -->
             </div>
-            <div class="cardd">
+            <div class="cardd mate">
                 <img src="../img/MATES1/mate3.jpeg" alt="producto-mate"/>
                 <h4>Mate imperial gold Argentina</h4>
                 <h6>$7100</h6>
                 <a href="#" class="btn btn-success">Agregar al carrito</a>
             </div>
-            <div class="cardd">
+            <div class="cardd mate">
                 <img src="../img/MATES1/mate4.jpeg" alt="producto-mate"/>
                 <h4>Mate camionero cincelado</h4>
                 <h6>$8300</h6>
                 <a href="#" class="btn btn-success">Agregar al carrito</a>
             </div>
-            <div class="cardd">
+            <div class="cardd mate">
                 <img src="../img/MATES1/mate5.jpeg" alt="producto-mate"/>
                 <h4>Mate stanley</h4>
                 <h6>$7500</h6>
@@ -153,31 +143,31 @@
             </div>
         </section>
         <section id="termos" class="allProduct">
-            <div class="cardd">
+            <div class="cardd termos">
                 <img src="../img/TERMOS/termo1.jpg" alt="producto-termo"/>
                 <h4>Stanley classic bottle 1,4 Lts</h4>
                 <h6>$15000</h6>
                 <a href="#" class="btn btn-success">Agregar al carrito</a>
             </div>
-            <div class="cardd">
+            <div class="cardd termos">
                 <img src="../img/TERMOS/termo2.jpg" alt="producto-termo"/>
                 <h4>Stanley classic bottle 1 Lts</h4>
                 <h6>$10900</h6>
                 <a href="#" class="btn btn-success">Agregar al carrito</a>
             </div>
-            <div class="cardd">
+            <div class="cardd termos">
                 <img src="../img/TERMOS/termo3.jpg" alt="producto-termo"/>
                 <h4>Stanley classic bottle 750 Ml</h4>
                 <h6>$9800</h6>
                 <a href="#" class="btn btn-success">Agregar al carrito</a>
             </div>
-            <div class="cardd">
+            <div class="cardd termos">
                 <img src="../img/TERMOS/termo4.jpg" alt="producto-termo"/>
                 <h4>Keep 1L pico cebador</h4>
                 <h6>$3300</h6>
                 <a href="#" class="btn btn-success">Agregar al carrito</a>
             </div>
-            <div class="cardd">
+            <div class="cardd termos">
                 <img src="../img/TERMOS/termo5.jpg" alt="producto-termo"/>
                 <h4>Termos ploteados</h4>
                 <h6>$3200</h6>
@@ -185,37 +175,84 @@
             </div>
         </section>
         <section id="mochilas" class="allProduct">
-            <div class="cardd">
+            <div class="cardd mochilas">
                 <img src="../img/MOCHILAS/mochila1.jpg" alt="producto-mochila"/>
                 <h4>Mochila cuenca negra</h4>
                 <h6>$4900</h6>
                 <a href="#" class="btn btn-success">Agregar al carrito</a>
             </div>
-            <div class="cardd">
+            <div class="cardd mochilas">
                 <img src="../img/MOCHILAS/mochila2.jpeg" alt="producto-mochila"/>
                 <h4>Mochila materok gris oscuro</h4>
                 <h6>$5300</h6>
                 <a href="#" class="btn btn-success">Agregar al carrito</a>
             </div>
-            <div class="cardd">
+            <div class="cardd mochilas">
                 <img src="../img/MOCHILAS/mochila3.jpg" alt="producto-mochila"/>
                 <h4>Mochila matriona bordó</h4>
                 <h6>$6100</h6>
                 <a href="#" class="btn btn-success">Agregar al carrito</a>
             </div>
-            <div class="cardd">
+            <div class="cardd mochilas">
                 <img src="../img/MOCHILAS/mochila4.jpg" alt="producto-mochila"/>
                 <h4>Mochila matriona azul</h4>
                 <h6>$6000</h6>
                 <a href="#" class="btn btn-success">Agregar al carrito</a>
             </div>
-            <div class="cardd">
+            <div class="cardd mochilas">
                 <img src="../img/MOCHILAS/mochila5.jpg" alt="producto-mochila"/>
                 <h4>Mochila matera urbana verde</h4>
                 <h6>$7000</h6>
                 <a href="#" class="btn btn-success">Agregar al carrito</a>
             </div> 
         </section>
+
+        <!-- tabla -->
+
+        <div class="table container">
+            <table class="tabla">
+                <tr>
+                    <td>#</td>
+                    <td>Producto</td>
+                    <td>Precio</td>
+                    <td>Cantidad</td>
+                    <td>Total (c/producto)</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Total</td>
+                    <td></td>
+                </tr>
+                </table>
+
+        </div>
+        <ul id="producto1">
+
+        </ul>
+
     </main>
 
     <!-- FOOTER -->
