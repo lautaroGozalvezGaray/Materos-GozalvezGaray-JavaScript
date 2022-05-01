@@ -63,7 +63,6 @@ document.addEventListener('keyup', (e) => {
 
 
 //input radio - se seleccionan los elementos a mostrar
-alert("funciona")
 
 let radio0 = document.querySelector(".all");
 let radio1 = document.querySelector(".mate");
@@ -107,7 +106,7 @@ radio3.addEventListener('change', function(){
 
 });
 
-
+/* 
 //BOTONES PARA AGREGAR AL CARRITO DE COMPRA
 
 const buySelect=[];//almacenamos los productos que el cliente quiere comprar.
@@ -133,5 +132,5 @@ buySelect.forEach( (elemento) => {
     li.innerHTML = `<strong>categoria</strong> ${elemento.categoria}, <strong>Monto: $</strong> ${elemento.precio}, <strong>tipo:</strong> ${elemento.tipo}`;
     // Agregar nodo LI a UL
     ul.append(li);
-});
+}); */
 
